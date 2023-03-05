@@ -21,4 +21,8 @@ public class IssueService {
     public void create(String summary, String description) {
         issueRepesitory.insert(summary, description);
     }
+
+    public IssueEntity findById(long issueId) {
+        return issueRepesitory.findById(issueId);
+    }
 }

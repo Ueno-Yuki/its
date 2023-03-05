@@ -14,4 +14,7 @@ public interface IssueRepesitory {
 
     @Insert("INSERT INTO issues (summary, description) VALUES (#{summary}, #{description})")
     void insert(@Param("summary") String summary, @Param("description") String description);
+
+    @Select("SELECT * FROM issues WHERE id = #{issueId}")
+    IssueEntity findById(long issueId);
 }
