@@ -1,4 +1,4 @@
-package templates.issues;
+package com.example.its.web.issue;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
